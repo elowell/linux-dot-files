@@ -1,0 +1,9 @@
+Host be-staging
+    HostName 172.21.32.130
+    User ubuntu
+    IdentityFile ~/keys/metrics-engine-prod.pem
+
+Host be-prod
+    HostName 172.21.32.105
+    User ubuntu
+    IdentityFile ~/keys/metrics-engine-prod.pem
