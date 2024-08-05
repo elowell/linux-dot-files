@@ -1,0 +1,16 @@
+On the system with the colors and settings you want, run:
+
+gconftool-2 --dump '/apps/gnome-terminal' > gnome-terminal-conf.xml
+then gnome-terminal-conf.xml to your git repo.
+
+Then on the other machines, run
+
+gconftool-2 --load gnome-terminal-conf.xml
+
+to set it.
+
+Note that this method overwrites all settings. Try running:
+
+gconftool-2 -R '/apps/gnome-terminal'
+
+to see all the settings that will be affected.
