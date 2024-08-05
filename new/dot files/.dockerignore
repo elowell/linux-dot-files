@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Allow requirements/ and src/
+!/requirements/
+!/src
+!/datadog.yaml
+
+!looker.ini
+
+# Ignore unnecesary files/directories in included directories
+*venv*

@@ -1,0 +1,104 @@
+# no IntelliJ files
+.idea
+
+# Ignore pyright
+pyrightconfig.json
+
+# don't upload macOS folder info
+*.DS_Store
+
+# don't upload node_modules from npm test
+node_modules/
+
+# logs
+logs/
+
+#python cached
+*.pyc
+
+# pytype
+.pytype
+
+# vscode config
+.vscode/*
+
+# vscode sftp settings
+.vscode/sftp.json
+.vscode-upload.json
+
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# AWS CDK
+!/cdk/lib
+
+# virtual env
+env/
+*venv*
+
+# mypy cache
+.mypy_cache
+
+# python cache
+__pycache__
+
+# generated dirs
+migrations/
+detectron2/
+
+
+# video files
+*.mp4
+*.mov
+
+# generated js
+**/static/js/*
+
+# coverage
+coverage/
+.coverage
+
+# log file
+log.out
+
+# db files
+*.db
+
+# downloaded model weights
+thirdparty/polyrnn/model_weights
+
+**/*.env
+.envrc
+
+**/template.yaml
+cdk/.aws-sam
+
+
+creds.json
+*.log

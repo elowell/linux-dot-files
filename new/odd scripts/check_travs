@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+log_name=$1
+builder=$2
+log_date=$(echo ${log_name:0:10} | tr '.' '-')
+s3_path="s3://log-miner-parquet-production/scenario-mining/prod/scenario/${builder}/version=0.0.1/log_date=${log_date}/${log_name}.snappy.parquet"
+
+parquet-tools csv $s3_path | csvlook | less -S
